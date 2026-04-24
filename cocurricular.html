@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="mobile-header.css">
+  <link rel="stylesheet" href="inner-pages.css">
+  <title>Co-Curricular Activities - Bai Najamai Noshirwan Dastur Primary &amp; Nursery School</title>
+  <style>
+    .coc-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .coc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 10px;
+    }
+
+    .coc-card {
+      background: #fff;
+      border: 1px solid #d0e6f8;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: box-shadow .3s, transform .3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .coc-card:hover {
+      box-shadow: 0 6px 24px rgba(8, 82, 145, .15);
+      transform: translateY(-3px);
+    }
+
+    .coc-card-header {
+      background: linear-gradient(135deg, #085291 0%, #1565c0 100%);
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .coc-card-header i {
+      color: #f8c301;
+      font-size: 24px;
+    }
+
+    .coc-card-header h4 {
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .coc-card-body {
+      padding: 18px 22px;
+      flex: 1;
+    }
+
+    .coc-card-body p {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .coc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .coc-card-body p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div id="header">
+      <div class="upper-header">
+        <div class="container-fluid">
+          <div class="left-upper-header">
+            <a href="mailto:bnndpns@dasturpri-nur.org" target="_blank"><span class="fas fa-envelope"></span>
+              bnndpns@dasturpri-nur.org</a>
+            <a href="tel:02026362633"><span class="fas fa-phone"></span> 020 2636 2633</a>
+          </div>
+          <div class="middle-upper-header">
+            <select name="websites" id="website-select">
+              <option value="">--Other School Website--</option>
+              <option value="#">Sardar Dastur Schools Trust</option>
+              <option value="#">Bai Najamai Noshirwan Dastur Primary &amp; Nursery School</option>
+              <option value="#">The Sardar Dastur Hoshang Boys' School</option>
+              <option value="#">Sardar Dastur Hormazdiar High School</option>
+              <option value="#">The Sardar Dastur Noshirwan Girls' High School</option>
+              <option value="#">Sardar Dastur Hormazdiar Junior College</option>
+            </select>
+          </div>
+          <div class="right-upper-header">
+            <a href="calendar.html">Calendar</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#" class="payment-btn"><svg class="wgl-dashes inner-dashed-border animated-dashes">
+                <rect rx="25px" ry="25px"></rect>
+              </svg> Online Payment</a>
+          </div>
+        </div>
+      </div>
+      <div class="lower-header">
+        <div class="container-fluid">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="logo img">
+            <h1 class="school-name">Bai Najamai Noshirwan Dastur <br> Primary &amp; Nursery School</h1>
+          </a>
+          <div class="navigation">
+            <ul class="nav navbar-nav">
+              <li class="nav-li"><a href="index.html">Home</a></li>
+              <li class="nav-li"><a href="#">About Us</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="principal-desk.html">Principal's Desk</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-li"><a href="#">Rules</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="generalrules.html">General Rules</a></li>
+                    <li><a href="#">School Uniform &#9658;
+                        <ul class="submenu">
+                          <li><a href="primary-uniform.html">Primary Uniform</a></li>
+                          <li><a href="pre-primary-uniform.html">Pre-Primary Uniform</a></li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li><a href="admission.html">Admission &amp; Withdrawal</a></li>
+                    <li><a href="recommendation.html">Recommendation to Parents</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-li"><a href="#">Infrastructure &amp; Facilities</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-li"><a href="#" class="active">Academics</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="curriculum.html">Curriculum &amp; Affiliation</a></li>
+                    <li><a href="examination.html">Examination &amp; Promotion</a></li>
+                    <li><a href="cocurricular.html">Co-curricular</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-li"><a href="contact.html">Contact Us</a></li>
+              <li class="nav-li nav-admission-btn">
+                <a href="#" class="admission-btn">
+
+                  Admission
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-menu-container">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+      <div class="mobile-menu">
+        <a class="canva_expander nav-menu-link menu-button" href="#">
+          <span class="dot1"></span><span class="dot2"></span><span class="dot3"></span><span class="dot4"></span>
+        </a>
+        <button class="cross">&#735;</button>
+        <div class="menu" inert>
+          <div class="mobile-top-header">
+            <a href="mailto:bnndpns@dasturpri-nur.org"><i class="fas fa-envelope"></i> bnndpns@dasturpri-nur.org</a>
+            <a href="tel:02026362633"><i class="fas fa-phone"></i> 020 2636 2633</a>
+            <div class="custom-select">
+              <div class="select-trigger">-- Other School Website -- <i class="fas fa-chevron-down"></i></div>
+              <ul class="select-options">
+                <li data-url="#">Sardar Dastur Schools Trust</li>
+                <li data-url="#">Bai Najamai Noshirwan Dastur Primary &amp; Nursery School</li>
+                <li data-url="#">The Sardar Dastur Hoshang Boys' School</li>
+                <li data-url="#">Sardar Dastur Hormazdiar High School</li>
+                <li data-url="#">Sardar Dastur Hormazdiar Junior College</li>
+              </ul>
+            </div>
+            <div class="mobile-top-links">
+              <a href="calendar.html">Calendar</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="#" class="payment-btn">Online Payment</a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="nav__submenu">About Us <i class="fas fa-chevron-right"></i>
+                <ul class="nav__sub">
+                  <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                  <li class="nav__item"><a class="nav__link" href="about.html">About Us</a></li>
+                  <li class="nav__item"><a class="nav__link" href="principal-desk.html">Principal's Desk</a></li>
+                </ul>
+              </a>
+            </li>
+            <li><a href="#" class="nav__submenu">Rules <i class="fas fa-chevron-right"></i>
+                <ul class="nav__sub">
+                  <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                  <li class="nav__item"><a class="nav__link" href="generalrules.html">General Rules</a></li>
+                  <li class="nav__item"><a href="#" class="nav__submenu">School Uniform <i
+                        class="fas fa-chevron-right"></i>
+                      <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i>
+                            Back</a></li>
+                        <li class="nav__item"><a class="nav__link" href="primary-uniform.html">Primary Uniform</a></li>
+                        <li class="nav__item"><a class="nav__link" href="pre-primary-uniform.html">Pre-Primary
+                            Uniform</a></li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="admission.html">Admission &amp; Withdrawal</a></li>
+                  <li class="nav__item"><a class="nav__link" href="recommendation.html">Recommendation to Parents</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li><a href="#" class="nav__submenu">Infrastructure &amp; Facilities <i class="fas fa-chevron-right"></i>
+                <ul class="nav__sub">
+                  <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                  <li class="nav__item"><a class="nav__link" href="infrastructure.html">Infrastructure</a></li>
+                  <li class="nav__item"><a class="nav__link" href="facilities.html">Facilities</a></li>
+                </ul>
+              </a>
+            </li>
+            <li><a href="#" class="nav__submenu">Academics <i class="fas fa-chevron-right"></i>
+                <ul class="nav__sub">
+                  <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                  <li class="nav__item"><a class="nav__link" href="curriculum.html">Curriculum &amp; Affiliation</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="examination.html">Examination &amp; Promotion</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="cocurricular.html">Co-curricular</a></li>
+                </ul>
+              </a>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" class="mobile-admission-menu-btn">Admission</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="site-content">
+    <section class="breadcrumb-area">
+      <div class="breadcrumb-overlay"></div>
+      <div class="container">
+        <h1 class="m-0">Co-Curricular Activities</h1>
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Co-Curricular Activities</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-section section-lg">
+      <img src="images/star.svg" alt="" class="star">
+      <div class="container section-inner-container">
+        <div class="coc-wrap">
+          <div class="common-heading" style="margin-bottom: 35px;">
+            <h5 class="small-heading">Beyond the Classroom</h5>
+            <h2 class="main-heading">Co-Curricular Activities</h2>
+          </div>
+          <div class="coc-grid">
+
+            <div class="coc-card">
+              <div class="coc-card-header"><i class="fas fa-music"></i>
+                <h4>Music</h4>
+              </div>
+              <div class="coc-card-body">
+                <p>Music time is a popular and much loved activity in School, especially in the Nursery Section — class
+                  singing is fun time. In addition to class singing, we have a choir group from Std. I to IV which
+                  performs at various inter school choir festivals, competitions and other school functions.</p>
+              </div>
+            </div>
+
+            <div class="coc-card">
+              <div class="coc-card-header"><i class="fas fa-drum"></i>
+                <h4>Band</h4>
+              </div>
+              <div class="coc-card-body">
+                <p>The School has its own percussion band. Students of Std. II to Std. IV are encouraged to learn
+                  musical instruments and form part of the band.</p>
+              </div>
+            </div>
+
+            <div class="coc-card">
+              <div class="coc-card-header"><i class="fas fa-fist-raised"></i>
+                <h4>Karate</h4>
+              </div>
+              <div class="coc-card-body">
+                <p>The well trained staff of 'All India Gojukai Karate – Do' founded by Mr. Vispy Kapadia conducts
+                  karate classes for students of Std. I to Std. IV during school hours.</p>
+              </div>
+            </div>
+
+            <div class="coc-card">
+              <div class="coc-card-header"><i class="fas fa-robot"></i>
+                <h4>Robotics</h4>
+              </div>
+              <div class="coc-card-body">
+                <p>Robotics in schools provides hands-on learning by engaging students through a project-based approach.
+                  It fosters critical thinking, creativity, problem-solving, and teamwork skills, preparing students for
+                  future technological needs.</p>
+              </div>
+            </div>
+
+            <div class="coc-card">
+              <div class="coc-card-header"><i class="fas fa-bus"></i>
+                <h4>Excursions / Visits</h4>
+              </div>
+              <div class="coc-card-body">
+                <p>The School organizes field trips / educational trips for the students to enhance experiential
+                  learning.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="section-lg pb-0">
+    <img src="images/footer-girl.png" alt="" class="footer-girl">
+    <div class="footer-inner container-fluid">
+      <div class="footer-links">
+        <div class="footer-logo"><img src="images/dastur-logo.png" alt=""></div>
+        <p>Bai Najamai Noshirwan Dastur Primary School is a recognized co-educational Primary School founded on 21st
+          September 1953.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Useful Links</h5>
+        <hr>
+        <ul class="useful-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">School History</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Contact Us</h5>
+        <hr>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/5Jnej1zrEzha9xLt9" target="_blank">Bai Najamai Noshirwan Dastur Primary
+              &amp; Nursery School</a></li>
+          <li><a href="mailto:bnndpns@dasturpri-nur.org" target="_blank">bnndpns@dasturpri-nur.org</a></li>
+          <li><a href="tel:02026362633" target="_blank">020 26362633 Ext. – 302</a></li>
+        </ul>
+      </div>
+      <div class="footer-links timings">
+        <h5>School Timings</h5>
+        <hr>
+        <ul>
+          <li><strong>&#9734; Std I &amp; II &#9734;</strong>
+            <p>Session 1 : 9.00 a.m. to 03.00 p.m. (Saturdays closed)</p>
+            <p>Session 2 : Monday to Friday – 12.30 p.m. to 5.30 p.m.</p>
+            <p class="indent-line">2nd &amp; 4th Saturday – 12.30 p.m. to 2.45 p.m.</p>
+          </li>
+          <li><strong>&#9734; Std III &amp; IV &#9734;</strong>
+            <p>Session 1 : 9.00 a.m. to 03.00 p.m. (Saturdays closed)</p>
+          </li>
+          <li><strong>&#9734; Nursery &amp; Jr.Kg &#9734;</strong>
+            <p>Session 1 : 9.00 a.m. to 12.30 p.m. (Saturdays closed)</p>
+            <p>Session 2 : 12.30 p.m. to 4.00 p.m. (Saturdays closed)</p>
+          </li>
+          <li><strong>&#9734; Sr.Kg &#9734;</strong>
+            <p>Session 1 : 9.00 a.m. to 12.30 p.m. (Saturdays closed)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="lower-footer container-fluid">
+      <div class="lower-footer-links">
+        <p>Copyright &copy; 2026 Sardar Dastur School. All Rights Reserved.</p>
+        <p>Designed &amp; Developed by Nspiresoft LLP</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

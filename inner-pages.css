@@ -1,0 +1,14 @@
+/* ── Reset the grid that pages.css applies to .about-section .container ── */
+.about-section .section-inner-container {
+  display: block !important;
+  grid-template-columns: unset !important;
+  gap: unset !important;
+  padding: 0 15px;
+}
+
+/* ── Sensible responsive padding ── */
+@media (max-width: 576px) {
+  .about-section .section-inner-container {
+    padding: 0;
+  }
+}
